@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script src='/app.js' defer></script>
+  </head>
+  <body>
+    <h1>Acme Customers SPA</h1>
+    <form>
+      <input name='email' type='email' id='email'/>
+      <button id='createButton'>Create</button>
+    </form>
+    <div id='message'>
+    </div>
+    <ul id='customerList'>
+    </ul>
+    <pre>
+    - name repo acme_customers_spa
+    - db folder
+      - conn.js
+      - Customer.js
+      - index.js
+    - server.js - approx (~40 loc)
+      - GET / - serves page
+      - GET /api/customers - gets all customers
+      - POST /api/customers - creates a customer and returns it
+      - DELETE /api/customers/:id - deletes a customer
+    - app.js - client side js (~50 loc)
+    - index.html -
+    &lt;html&gt; 
+      &lt;head&gt; 
+        &lt;script src='/app.js' defer&gt;&lt;/script&gt; 
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Acme Customers SPA&lt;/h1&gt;
+        &lt;form&gt;
+          &lt;input name='email' type='email' id='email'/&gt;
+            &lt;button id='createButton'&gt;Create&lt;/button&gt; 
+          &lt;/form&gt; 
+          &lt;div id='message'&gt;
+          &lt;/div&gt;
+          &lt;ul id='customerList'&gt;
+          &lt;/ul&gt;
+       &lt;/body&gt;
+     &lt;/html&gt;
+    </pre>
+  </body>
+</html>
